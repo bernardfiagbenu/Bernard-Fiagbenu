@@ -1,11 +1,14 @@
-<div align="center">
+# Portfolio Pro - Bernard Fiagbenu
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern portfolio website built with Next.js, featuring projects, research, and an AI chatbot.
 
-  <h1>Built with AI Studio</h2>
+## Getting Started
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+```bash
+npm install
+npm run dev
+```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Deploy to Netlify
 
-</div>
+Push to GitHub and connect via Netlify. Build settings are in `netlify.toml`.

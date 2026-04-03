@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'PT Sans', sans-serif; /* Default body font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif; /* Default headline font */
+}
+
+@layer base {
+  :root {
+    --background: 240 67% 97%; /* Light Lavender */
+    --foreground: 275 100% 15%; /* Dark Indigo */
+
+    --card: 0 0% 100%;
+    --card-foreground: 275 100% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 275 100% 15%;
+
+    --primary: 275 100% 25%; /* Deep Indigo */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 270 33% 90%; /* Lighter Amethyst */
+    --secondary-foreground: 275 100% 15%;
+
+    --muted: 270 33% 90%;
+    --muted-foreground: 275 20% 45%;
+
+    --accent: 270 33% 70%; /* Soft Amethyst */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 33% 85%;
+    --input: 270 33% 88%;
+    --ring: 275 100% 25%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 33% 80%; /* Lighter Amethyst for dark mode */
+    --primary-foreground: 275 100% 15%;
+
+    --secondary: 270 15% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 270 15% 20%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 270 33% 70%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 270 15% 20%;
+    --input: 270 15% 20%;
+    --ring: 270 33% 70%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply antialiased;
+  }
+}
