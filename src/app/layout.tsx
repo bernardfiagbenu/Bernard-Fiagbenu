@@ -7,7 +7,11 @@ import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from 'next-themes';
 import { UserProvider } from '@/context/UserContext';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl = rawSiteUrl 
+  ? (rawSiteUrl.startsWith('http') ? rawSiteUrl : `https://${rawSiteUrl}`) 
+  : '';
+
 // Using the LinkedIn profile picture for OG image
 const profileImageUrl = "https://media.licdn.com/dms/image/v2/D4E03AQHUX2NRr94X0g/profile-displayphoto-scale_200_200/B4EZhRbogBHIAc-/0/1753712855893?e=1756339200&v=beta&t=ENNu6kVKgGex8c_GZVC_0BtHBKcW6mj4C1CIeB1fVf4"; 
 
