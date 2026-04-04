@@ -131,7 +131,7 @@ export default function RootLayout({
         <UserProvider>
             <ThemeProvider
                 attribute="class"
-                defaultTheme="dark"
+                defaultTheme="light"
                 enableSystem={false}
             >
               <div className="flex flex-col flex-grow">
