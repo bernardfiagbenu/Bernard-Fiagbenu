@@ -21,19 +21,19 @@ const faviconUrl = "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'
 export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : null,
   title: {
-    default: 'Bernard Fiagbenu | Computer Science Educationist & Developer in Ghana',
+    default: 'Bernard Fiagbenu | Computer Scientist & Developer in Ghana',
     template: '%s | Bernard Fiagbenu',
   },
-  description: 'The digital portfolio of Bernard Fiagbenu, a Computer Science Educationist and Software Developer based in Ghana, Africa. Specializing in web technologies, innovative tech solutions, and empowering the next generation of African tech leaders.',
-  keywords: ['Bernard Fiagbenu', 'Computer Science Educationist', 'Ghana', 'Africa', 'Software Developer', 'Web Developer', 'Tech Educator', 'Next.js Developer', 'React Developer', 'Portfolio', 'Tech Projects', 'Software Engineering', 'Full-Stack Developer'],
+  description: 'The digital portfolio of Bernard Fiagbenu, a Computer Scientist and Software Developer based in Ghana, Africa. Specializing in web technologies, innovative tech solutions, and empowering the next generation of African tech leaders.',
+  keywords: ['Bernard Fiagbenu', 'Computer Scientist', 'Ghana', 'Africa', 'Software Developer', 'Web Developer', 'Tech Educator', 'Next.js Developer', 'React Developer', 'Portfolio', 'Tech Projects', 'Software Engineering', 'Full-Stack Developer'],
   authors: [{ name: 'Bernard Fiagbenu', url: siteUrl || undefined }],
   creator: 'Bernard Fiagbenu',
   icons: {
     icon: faviconUrl,
   },
   openGraph: {
-    title: 'Bernard Fiagbenu | Computer Science Educationist in Ghana',
-    description: 'Digital portfolio of Bernard Fiagbenu, Computer Science Educationist and Software Engineer based in Ghana, Africa.',
+    title: 'Bernard Fiagbenu | Computer Scientist in Ghana',
+    description: 'Digital portfolio of Bernard Fiagbenu, Computer Scientist and Software Engineer based in Ghana, Africa.',
     url: siteUrl || undefined,
     siteName: 'Bernard Fiagbenu Portfolio',
     images: [
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bernard Fiagbenu | Computer Science Educationist in Ghana',
-    description: 'Digital portfolio of Bernard Fiagbenu, Computer Science Educationist and Software Engineer based in Ghana, Africa.',
+    title: 'Bernard Fiagbenu | Computer Scientist in Ghana',
+    description: 'Digital portfolio of Bernard Fiagbenu, Computer Scientist and Software Engineer based in Ghana, Africa.',
     creator: '@FiagbenuBe14283',
     images: [profileImageUrl],
   },
@@ -95,7 +95,7 @@ export default function RootLayout({
         "name": "Bernard Fiagbenu",
         "url": siteUrl || undefined,
         "image": profileImageUrl,
-        "jobTitle": ["Computer Science Educationist", "Software Developer"],
+        "jobTitle": ["Computer Scientist", "Software Developer"],
         "nationality": {
           "@type": "Country",
           "name": "Ghana"
@@ -104,7 +104,7 @@ export default function RootLayout({
           "@type": "Place",
           "name": "Ghana, Africa"
         },
-        "description": "Computer Science Educationist and Software Developer based in Ghana, Africa, passionate about technology, education, and innovation.",
+        "description": "Computer Scientist and Software Developer based in Ghana, Africa, passionate about technology, education, and innovation.",
         "alumniOf": {
           "@type": "CollegeOrUniversity",
           "name": "University of the People"

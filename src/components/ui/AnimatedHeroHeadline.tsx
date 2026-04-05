@@ -61,7 +61,7 @@ export default function AnimatedHeroHeadline() {
           transition: 'opacity 1s ease 0.8s, transform 1s ease 0.8s',
         }}
       >
-        <span>Computer Science Educationist &</span>
+        <span>Computer Scientist &</span>
         <span className="relative inline-block font-bold text-foreground mx-1">
           Innovator
           {/* Hand-drawn SVG underline animation */}

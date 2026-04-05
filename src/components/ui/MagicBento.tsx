@@ -39,7 +39,7 @@ export interface BentoProps {
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-const DEFAULT_GLOW_COLOR = '132, 0, 255'; // Purple
+const DEFAULT_GLOW_COLOR = '255, 255, 255'; // White
 const MOBILE_BREAKPOINT = 768;
 
 const createParticleElement = (x: number, y: number, color: string = DEFAULT_GLOW_COLOR): HTMLDivElement => {
@@ -296,7 +296,7 @@ export const MagicBento: React.FC<BentoProps> = ({
 
         .bento-card-wrapper {
           background: hsl(var(--card));
-          border: 1px solid hsl(var(--border) / 0.2);
+          border: 1px solid hsl(var(--border));
           border-radius: 24px;
           position: relative;
           overflow: hidden;
@@ -359,7 +359,7 @@ export const MagicBento: React.FC<BentoProps> = ({
           const Content = (
             <Link 
               href={card.href}
-              className="h-full w-full p-6 flex flex-col justify-between group cursor-pointer"
+              className="h-full w-full p-6 flex flex-col justify-between group cursor-pointer shine"
             >
               <div className="spotlight-overlay" />
               {enableBorderGlow && <div className="border-glow" />}

@@ -45,7 +45,7 @@ const navigationSections = [
   },
   {
     title: 'Experience',
-    description: 'My professional journey as a Computer Science Educationist and Developer.',
+    description: 'My professional journey as a Computer Scientist and Developer.',
     icon: Briefcase,
     href: '/experience',
     label: 'Career',

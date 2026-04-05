@@ -53,8 +53,20 @@ export default function AboutPage() {
         ></script>
         
         <SectionContainer title="About Me" subtitle="Innovating for Ghana and Africa">
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-            <article className="text-left md:text-left">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
+            <div className="relative flex-shrink-0">
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-xl relative z-10">
+                <img 
+                  src="https://media.licdn.com/dms/image/v2/D4E03AQHUX2NRr94X0g/profile-displayphoto-scale_200_200/B4EZhRbogBHIAc-/0/1753712855893?e=1756339200&v=beta&t=ENNu6kVKgGex8c_GZVC_0BtHBKcW6mj4C1CIeB1fVf4" 
+                  alt="Bernard Fiagbenu"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative border lines */}
+              <div className="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-primary/40 rounded-tl-xl"></div>
+              <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-primary/40 rounded-br-xl"></div>
+            </div>
+            <article className="text-left md:text-left flex-grow">
               <h2 className="text-2xl font-headline font-semibold text-primary mb-4">Bernard Fiagbenu</h2>
               <p className="font-body text-lg text-foreground mb-4 text-pretty">
                 Hello! I am a Computer Scientist and innovator driven by a mission: to harness the power of technology to solve critical challenges in Ghana and across the African continent. My work is rooted in the belief that a deep understanding of theoretical computer science is the key to unlocking practical, high-impact solutions.
