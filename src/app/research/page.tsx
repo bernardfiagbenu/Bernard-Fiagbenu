@@ -273,7 +273,7 @@ export default function ResearchPage() {
               "keywords": item.tags.join(', ')
             };
             return (
-              <Card key={item.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <Card key={item.id} className="overflow-hidden hover:shadow-2xl transition-all duration-300 perspective-container dashboard-3d rounded-[2.5rem]">
                 <script
                   type="application/ld+json"
                   dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

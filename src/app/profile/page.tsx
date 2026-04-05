@@ -49,7 +49,7 @@ export default function ProfilePage() {
     <div className="container mx-auto px-4 py-8">
       <SectionContainer title="My Profile" subtitle="Welcome to your personal dashboard">
         <div className="max-w-md mx-auto">
-          <Card>
+          <Card className="hover:shadow-2xl transition-all duration-300 perspective-container dashboard-3d rounded-[2.5rem]">
             <CardHeader className="items-center text-center">
               <CardTitle className="text-2xl">{user.displayName || 'User'}</CardTitle>
               <CardDescription>{user.email || user.phoneNumber || 'No contact info'}</CardDescription>

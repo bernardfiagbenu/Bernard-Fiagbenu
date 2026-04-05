@@ -99,7 +99,7 @@ export default function ContactForm() {
         )}
       </div>
       
-      <Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground">
+      <Button type="submit" disabled={isSubmitting} className="w-full py-8 rounded-[2rem] bg-primary text-primary-foreground font-black text-2xl shadow-2xl hover:scale-[1.01] transition-transform shine">
         {isSubmitting ? 'Preparing Message...' : 'Send Message via Email Client'}
       </Button>
     </form>

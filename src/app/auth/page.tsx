@@ -10,7 +10,7 @@ export default function AuthPage() {
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="flex justify-center items-center py-12">
-                <Card className="w-full max-w-md text-center">
+                <Card className="w-full max-w-md text-center hover:shadow-2xl transition-all duration-300 perspective-container dashboard-3d rounded-[2.5rem]">
                     <CardHeader>
                         <CardTitle className="text-2xl">Authentication</CardTitle>
                         <CardDescription>

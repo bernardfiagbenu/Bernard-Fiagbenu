@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   keywords: ['Bernard Fiagbenu', 'Computer Science Educationist', 'Ghana', 'Africa', 'Software Developer', 'Web Developer', 'Tech Educator', 'Next.js Developer', 'React Developer', 'Portfolio', 'Tech Projects', 'Software Engineering', 'Full-Stack Developer'],
   authors: [{ name: 'Bernard Fiagbenu', url: siteUrl || undefined }],
   creator: 'Bernard Fiagbenu',
+  icons: {
+    icon: faviconUrl,
+  },
   openGraph: {
     title: 'Bernard Fiagbenu | Computer Science Educationist in Ghana',
     description: 'Digital portfolio of Bernard Fiagbenu, Computer Science Educationist and Software Engineer based in Ghana, Africa.',
@@ -116,18 +119,11 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
-        <link rel="icon" href={faviconUrl} type="image/svg+xml" />
+      <body className="font-body flex flex-col min-h-screen">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        ></script>
-      </head>
-      <body className="font-body flex flex-col min-h-screen">
+        />
         <UserProvider>
             <ThemeProvider
                 attribute="class"

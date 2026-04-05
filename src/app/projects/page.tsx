@@ -191,7 +191,7 @@ export default function ProjectsPage() {
               "keywords": project.tags.join(', ')
             };
             return (
-              <Card key={index} className="flex flex-col overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:scale-105">
+              <Card key={index} className="flex flex-col overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:scale-105 perspective-container dashboard-3d rounded-[2.5rem]">
                 <script
                   type="application/ld+json"
                   dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}

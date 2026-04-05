@@ -117,7 +117,7 @@ export default function SkillsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => (
             <section key={category.name} aria-labelledby={`skill-category-${category.name.toLowerCase().replace(/\s+/g, '-')}`}>
-              <Card className="hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+              <Card className="hover:shadow-2xl transition-all duration-300 flex flex-col h-full perspective-container dashboard-3d rounded-[2.5rem]">
                 <CardHeader className="flex flex-row items-center space-x-3 pb-3">
                   <category.icon className="w-8 h-8 text-primary" aria-hidden="true" />
                   <CardTitle id={`skill-category-${category.name.toLowerCase().replace(/\s+/g, '-')}`} className="font-headline text-xl text-primary">{category.name}</CardTitle>
