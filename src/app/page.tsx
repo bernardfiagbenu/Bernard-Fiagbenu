@@ -72,7 +72,6 @@ export default function HomePage() {
           <MagicBento 
             cards={navigationSections}
             glowColor="74, 0, 224" // Matching the BF logo color #4a00e0
-            enableStars={true}
             enableTilt={true}
           />
         </div>
