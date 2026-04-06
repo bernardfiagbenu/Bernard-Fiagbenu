@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { CodeXml, LogIn, Menu } from 'lucide-react';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { Button } from '../ui/button';
-import { useUser } from '@/context/UserContext';
-import { UserNav } from '@/components/layout/UserNav';
 import HeaderNav from './HeaderNav';
 import {
   Sheet,
@@ -26,7 +24,6 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const { user } = useUser();
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   return (
@@ -43,18 +40,6 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-2 sm:space-x-4 font-body">
           <HeaderNav />
-          <div className="flex items-center gap-2">
-            {user ? (
-              <UserNav />
-            ) : (
-              <Link href="/auth">
-                <Button variant="outline" size="sm">
-                  <LogIn className="mr-2 h-4 w-4" />
-                  Login
-                </Button>
-              </Link>
-            )}
-          </div>
           <ThemeToggle />
         </nav>
 
@@ -83,18 +68,6 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <div className="border-t pt-4">
-                  {user ? (
-                    <UserNav />
-                  ) : (
-                    <Link href="/auth" onClick={() => setIsSheetOpen(false)}>
-                      <Button variant="outline" className="w-full">
-                        <LogIn className="mr-2 h-4 w-4" />
-                        Login
-                      </Button>
-                    </Link>
-                  )}
-                </div>
               </nav>
             </SheetContent>
           </Sheet>

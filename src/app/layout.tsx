@@ -5,7 +5,6 @@ import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { ThemeProvider } from 'next-themes';
-import { UserProvider } from '@/context/UserContext';
 
 const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 const siteUrl = rawSiteUrl 
@@ -124,8 +123,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        <UserProvider>
-            <ThemeProvider
+        <ThemeProvider
                 attribute="class"
                 defaultTheme="light"
                 enableSystem={false}
@@ -139,7 +137,6 @@ export default function RootLayout({
               </div>
               <Toaster />
             </ThemeProvider>
-        </UserProvider>
       </body>
     </html>
   );
